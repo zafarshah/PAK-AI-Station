@@ -1,7 +1,6 @@
-# PAK-AI Station V0.7 — Streamlit dashboard
+# PAK-AI Station V0.1— Streamlit dashboard
 
 ## Fixes
-- Removed all incorrectly assigned photographs from V0.6.
 - Photos are fetched independently per module from Wikimedia Commons using `python photos.py` **in Google Colab**, with license metadata saved beside each image. Review images and licenses before public launch. If none is found, a correctly labeled colored fallback is shown.
 - Every photo is cropped to 960×600 and displayed at 16:10.
 - Functional English/Urdu, dark/light, small/medium/large controls.
@@ -23,11 +22,8 @@ Use `output.serve_kernel_port_as_iframe(8501)`. Do not disable security protecti
 - Weather is sourced from Open-Meteo. Hotel prices, drivers, alerts and official records require separate verified data feeds.
 
 
-## V0.8 user-selected photo mappings
+## User-selected photo mappings
 Eight supplied images have been mapped to their corresponding subjects: markets, grandma stories, kids learning, Quran, utilities/roads, forest/wildlife, agriculture/orchards, and tourism. All are normalized to 960x600 (16:10) using center cropping. The existing welcome image is unchanged. Public information, fisheries and environment require their own images; use `python photos.py` to download candidate images for missing modules, then review them before publishing. Do not run an image-replacement script over these curated images. Image rights remain to be confirmed before public deployment.
-
-
-## V0.9 — final three user-provided images
 - `info.jpg`: regional map of Gilgit-Baltistan (Public Information)
 - `env.jpg`: damaged bridge / flood impact (Environment & Disasters)
 - `fishery.jpg`: fish-farming cages (Fisheries & Aquaculture)
